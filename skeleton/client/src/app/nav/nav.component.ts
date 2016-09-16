@@ -1,0 +1,19 @@
+import {Component} from '@angular/core';
+import {NavService} from "./nav.service";
+import {OnInit} from '@angular/core';
+
+@Component({
+  selector: 'navigation',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.css']
+})
+export class NavComponent implements OnInit {
+
+  applicationData: Object;
+
+  constructor(private navService: NavService) { }
+
+  ngOnInit(): void {
+   // this.navService.getNavData().subscribe(res => this.applicationData = res);
+  }
+}
