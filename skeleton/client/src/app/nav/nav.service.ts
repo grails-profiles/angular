@@ -12,10 +12,10 @@ export class NavService {
   constructor(private http: Http) { }
 
   getNavData(): Observable<any> {
-    if(!this._navData){
+    if (!this._navData) {
       this._navData = this.http.get('http://localhost:8080/application')
-          .map((res:Response) => res.json())
-          .cache();
+          .map((res: Response) => res.json())/*
+          .cache()*/;
     }
     return this._navData;
   }
