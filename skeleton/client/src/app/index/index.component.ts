@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {NavService} from "../nav";
-import {Route, Router} from "@angular/router";
+import {NavService} from '../nav';
+import {Route, Router} from '@angular/router';
 
 @Component({
-  selector: 'index',
+  selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
@@ -14,7 +14,7 @@ export class IndexComponent implements OnInit {
   constructor(private navService: NavService, private router: Router) { }
 
   ngOnInit(): void {
-/*    this.navService.getNavData().subscribe(applicationData => {
+    this.navService.getNavData().subscribe(applicationData => {
       this.controllers = applicationData.controllers.sort((a: any, b: any) => {
         if (a < b) {
           return -1;
@@ -24,12 +24,12 @@ export class IndexComponent implements OnInit {
           return 0;
         }
       });
-    });*/
+    });
   }
 
   hasRoute(controllerName: string): boolean {
     return this.router.config.some((route: Route) => {
-      if (route.path == controllerName) {
+      if (route.path === controllerName) {
         return true;
       }
     });

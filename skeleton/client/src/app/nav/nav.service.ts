@@ -1,8 +1,8 @@
-import {Injectable} from "@angular/core";
-import {Http, Response} from "@angular/http";
+import {Injectable} from '@angular/core';
+import {Http, Response} from '@angular/http';
 
 import 'rxjs/add/operator/cache';
-import {Observable, Observer} from "rxjs";
+import {Observable} from 'rxjs';
 
 @Injectable()
 export class NavService {
@@ -13,13 +13,9 @@ export class NavService {
 
   getNavData(): Observable<any> {
     if(!this._navData){
-      this._navData = Observable.create((observer: Observer<any>) => {
-        //observer.next({});
-        observer.error("error");
-      });/*
-      this._navData = this.http.get('application')
+      this._navData = this.http.get('http://localhost:8080/application')
           .map((res:Response) => res.json())
-          .cache();*/
+          .cache();
     }
     return this._navData;
   }
