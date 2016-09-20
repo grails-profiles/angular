@@ -9,16 +9,16 @@ import {Route, Router} from '@angular/router';
 })
 export class IndexComponent implements OnInit {
 
-  controllers: Array<Object>;
+  controllers: Array<any>;
 
   constructor(private navService: NavService, private router: Router) { }
 
   ngOnInit(): void {
     this.navService.getNavData().subscribe(applicationData => {
       this.controllers = applicationData.controllers.sort((a: any, b: any) => {
-        if (a < b) {
+        if (a.name < b.name) {
           return -1;
-        } else if (a > b) {
+        } else if (a.name > b.name) {
           return 1;
         } else {
           return 0;

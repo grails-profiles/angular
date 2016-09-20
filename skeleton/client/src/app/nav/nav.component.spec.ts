@@ -8,6 +8,8 @@ import { Observable, Observer } from 'rxjs';
 
 describe('Component: Nav', () => {
 
+  let component: NavComponent;
+
   const navService = {
     getNavData: () => {
       return Observable.create((observer: Observer<any>) => {
@@ -29,12 +31,18 @@ describe('Component: Nav', () => {
         {provide: NavService, useValue: navService}
       ],
     });
+
+    let fixture = TestBed.createComponent(NavComponent);
+    component = fixture.debugElement.componentInstance;
   });
 
   it('should create the app', async(() => {
-    let fixture = TestBed.createComponent(NavComponent);
-    let component = fixture.debugElement.componentInstance;
     expect(component).toBeTruthy();
   }));
+
+  it("should set applicationData on init", () => {
+    component.ngOnInit();
+    expect(component.applicationData.testValue).toBe(3);
+  });
 
 });
