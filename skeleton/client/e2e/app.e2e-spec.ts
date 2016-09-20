@@ -9,6 +9,7 @@ describe('ng2-project App', function() {
 
   it('should have the correct title', () => {
     page.navigateTo();
+    expect(page.getHeading()).toEqual('Welcome to Grails');
     expect(page.getTitle()).toEqual('Welcome to Grails');
   });
 });

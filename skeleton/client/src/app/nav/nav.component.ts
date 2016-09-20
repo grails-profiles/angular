@@ -9,7 +9,7 @@ import {OnInit} from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  applicationData: Object;
+  applicationData: any;
 
   constructor(private navService: NavService) { }
 

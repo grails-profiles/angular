@@ -6,6 +6,10 @@ export class Ng2ProjectPage {
   }
 
   getTitle() {
-    return element(by.css('title')).getText();
+    return browser.getTitle();
+  }
+
+  getHeading() {
+    return element(by.tagName('h1')).getText();
   }
 }
