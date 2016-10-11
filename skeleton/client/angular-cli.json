@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.14",
+    "version": "1.0.0-beta.17",
     "name": "@grails.app.name@"
   },
   "apps": [
