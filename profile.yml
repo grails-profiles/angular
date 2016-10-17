@@ -1,10 +1,13 @@
 description: A profile for creating Grails applications with Angular 2
 instructions: |
+
     To get started with this profile, you will need to install the Angular CLI (npm install -g angular-cli).
     Currently the CLI requires Node 4.x.x and NPM 3.x.x. https://github.com/angular/angular-cli
 
-    To start the Grails application, execute "./gradlew server:bootRun"
-    To start the client side application, navigate to the client directory and execute "ng serve"
+    To start the Grails application separately, execute "./gradlew server:bootRun"
+    To start the client side application separately, execute "./gradlew client:bootRun"
+
+    To start both the client and server applications simultaneously, excute "./gradlew bootRun --parallel"
 skeleton:
     excludes:
         - gradlew
