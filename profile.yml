@@ -10,6 +10,7 @@ skeleton:
         - gradlew
         - gradlew.bat
         - gradle/
+        - gradle.properties
     parent:
         target: server
 features:
