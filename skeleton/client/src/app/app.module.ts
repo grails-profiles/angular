@@ -23,7 +23,7 @@ import { NavService } from './nav/nav.service';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(rootRouterConfig),
-    NgbModule
+    NgbModule.forRoot()
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, NavService],
   bootstrap: [AppComponent]
