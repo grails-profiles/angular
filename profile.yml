@@ -7,7 +7,7 @@ instructions: |
     To start the Grails application separately, execute "./gradlew server:bootRun"
     To start the client side application separately, execute "./gradlew client:bootRun"
 
-    To start both the client and server applications simultaneously, excute "./gradlew bootRun --parallel"
+    To start both the client and server applications simultaneously, execute "./gradlew bootRun --parallel"
 skeleton:
     excludes:
         - gradlew
