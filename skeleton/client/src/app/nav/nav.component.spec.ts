@@ -22,7 +22,7 @@ describe('Component: Nav', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbModule
+        NgbModule.forRoot()
       ],
       declarations: [
         NavComponent
