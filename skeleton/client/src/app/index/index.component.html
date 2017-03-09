@@ -22,7 +22,7 @@
         <li *ngFor="let c of controllers">
           <div [ngSwitch]="hasRoute(c.logicalPropertyName)">
             <a *ngSwitchCase="true" [routerLink]="'/' + c.logicalPropertyName">{{c.name}}</a>
-            <a *ngSwitchCase="false" [href]="'/' + c.logicalPropertyName">{{c.name}}</a>
+            <a *ngSwitchCase="false" [href]="serverUrl + c.logicalPropertyName">{{c.name}}</a>
           </div>
         </li>
       </ul>
