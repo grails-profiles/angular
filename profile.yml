@@ -13,6 +13,7 @@ skeleton:
         - gradlew.bat
         - gradle/
         - gradle.properties
+        - settings.gradle
     parent:
         target: server
 features:

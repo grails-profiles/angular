@@ -12,15 +12,14 @@ apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.grails-profile-publish"
 
 group 'org.grails.profiles'
-version '1.0.6.BUILD-SNAPSHOT'
-//version '1.0.5'
+version '4.0.0'
 
 grailsPublish {
     userOrg = 'grails'
-    githubSlug = 'grails-profiles/angular2'
+    githubSlug = 'grails-profiles/angular'
     license = 'Apache-2.0'
-    title = "Angular 2 Profile"
-    desc = "A profile for creating applications with Angular 2"
+    title = "Angular Profile"
+    desc = "A profile for creating applications with Angular"
     developers = [jameskleeh:"James Kleeh",willbuck:"Will Buck"]
 }
 
@@ -30,5 +29,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:rest-api:3.2.0"
+    runtime "org.grails.profiles:rest-api:3.2.1"
 }
