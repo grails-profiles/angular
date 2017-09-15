@@ -1,6 +1,6 @@
 .grails-icon img {
     height: 27px;
-    background-image: url("../images/grails-cupsonly-logo-white.svg");
+    background-image: url("../../images/grails-cupsonly-logo-white.svg");
 }
 
 a {
@@ -19,11 +19,12 @@ a {
     background:#79b94c no-repeat 50% 30%;
     margin-bottom: 20px;
     color: white;
-    height:300px;
     text-align:center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 img.grails-logo {
-    height:340px;
-    margin-top:-10px;
+    width: 65%;
+    margin-top: 10px;
 }

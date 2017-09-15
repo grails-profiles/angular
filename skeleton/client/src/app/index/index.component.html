@@ -1,7 +1,6 @@
 <div class="svg" role="presentation">
   <div class="grails-logo-container">
-    <img class="grails-logo" src="../../images/grails-cupsonly-logo-white.svg"> <span style="font-size: 10rem;margin-left: -100px;margin-right: -13px;">+</span>
-    <img class="hero-logo" src="https://angular.io/resources/images/logos/angular2/angular.svg" style="width: 161px;margin-right: -161px;margin-bottom: 88px;">
+    <img class="grails-logo" src="../../images/grailsplusangular.svg" alt="Grails plus angular"/>
   </div>
 </div>
 
@@ -22,7 +21,7 @@
         <li *ngFor="let c of controllers">
           <div [ngSwitch]="hasRoute(c.logicalPropertyName)">
             <a *ngSwitchCase="true" [routerLink]="'/' + c.logicalPropertyName">{{c.name}}</a>
-            <a *ngSwitchCase="false" [href]="'/' + c.logicalPropertyName">{{c.name}}</a>
+            <a *ngSwitchCase="false" [href]="serverUrl + c.logicalPropertyName">{{c.name}}</a>
           </div>
         </li>
       </ul>
