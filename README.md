@@ -18,7 +18,3 @@ Run the front-end unit tests and grails unit tests simultaneously with `./gradle
 Run the front-end e2e and grails integration tests simultaneously with `./gradlew integrationTest`
 
 No need to install Node, though we would recommend doing so if you'll be working with the front-end directly often!
-
-## Development
-
-Directions on how to contribute to this profile forthcoming!
