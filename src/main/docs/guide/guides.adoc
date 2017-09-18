@@ -1,0 +1,7 @@
+To learn more about the Angular profiles, check the following Grails Guides & Quickcasts:
+
+* http://guides.grails.org/angular2-combined/guide/index.html[Combining the Angular Profile Projects]
+
+The following blog posts would be useful too:
+
+* http://grailsblog.objectcomputing.com/posts/2017/04/12/angular-profiles.html[Grails Angular Profiles]

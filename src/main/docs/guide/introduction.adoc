@@ -1,0 +1,19 @@
+Grails Profiles encapsulate project commands, templates, and plugins. To create an application using the `angular` profile you can use
+the next command:
+
+`grails create-app myapp --profile=angular`
+
+The previous command creates a Gradle multi-project build where the `server`
+module contains the Grails application, and the `client` module contains the Angular 2 application.
+
+* To start the Grails application separately, execute `./gradlew server:bootRun`
+* To start the client side application separately, execute `./gradlew client:bootRun`
+* To start both the client and server applications simultaneously, execute `./gradlew bootRun --parallel`
+
+Although the profile creates a multi-project build, it is possible to combine both `client` and `server` projects into a single build. Read the Guide http://guides.grails.org/angular2-combined/guide/index.html[Combining the Angular Profile Projects] to learn how.
+
+Also, you could create a Grails application using the `angular` profile with the http://start.grails.org[Grails Application Forge]
+
+image::start.png[]
+
+Grails Application Forge is a great way to discover the different provided features in the profile.

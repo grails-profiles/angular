@@ -1,0 +1,1 @@
+WARNING: This profile was orginally named `angular2`. In order to be consistent with the Angular team’s guidelines on naming conventions it was renamed to `angular` Read about the http://grailsblog.objectcomputing.com/posts/2017/04/12/angular-profiles.html[angular profiles name changes].
