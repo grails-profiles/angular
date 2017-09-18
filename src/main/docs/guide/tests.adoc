@@ -1,0 +1,2 @@
+Run the front-end unit tests and grails unit tests simultaneously with `./gradlew test`
+Run the front-end e2e and grails integration tests simultaneously with `./gradlew integrationTest`
