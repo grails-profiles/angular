@@ -5,4 +5,6 @@ module contains the Grails application, and the `client` module contains the Ang
 * To start the client side application separately, execute `./gradlew client:bootRun`
 * To start both the client and server applications simultaneously, execute `./gradlew bootRun --parallel`
 
+No need to install Node, though we would recommend doing so if you'll be working with the front-end directly often!
+
 Although the profile creates a multi-project build, it is possible to combine both `client` and `server` projects into a single build. Read the Guide http://guides.grails.org/angular2-combined/guide/index.html[Combining the Angular Profile Projects] to learn how.
