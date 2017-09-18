@@ -32,11 +32,15 @@
                         
                         <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#profilename"><strong>2</strong><span>Profile Name</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#tests"><strong>3</strong><span>Tests</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#profilename"><strong>4</strong><span>Profile Name</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#guides"><strong>5</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>6</strong><span>Profile Info</span></a></div>
                         
                     </div>
                 </div>
@@ -61,11 +65,15 @@
                     
                     <div class="toc-item" style="margin-left:0px"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#profilename"><strong>2</strong><span>Profile Name</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#tests"><strong>3</strong><span>Tests</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#profilename"><strong>4</strong><span>Profile Name</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#guides"><strong>5</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>6</strong><span>Profile Info</span></a></div>
                     
                     <div style="clear:both" ></div>
                 </div>
@@ -89,6 +97,28 @@ the next command:</p>
 <p><code>grails create-app myapp --profile=angular</code></p>
 </div>
 <div class="paragraph">
+<p>Also, you could create a Grails application using the <code>angular</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../img/start.png" alt="start">
+</div>
+</div>
+<div class="paragraph">
+<p>Grails Application Forge is a great way to discover the different provided features in the profile.</p>
+</div>
+
+
+<h1 id="usage">2 Usage</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/usage.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
 <p>The previous command creates a Gradle multi-project build where the <code>server</code>
 module contains the Grails application, and the <code>client</code> module contains the Angular 2 application.</p>
 </div>
@@ -108,20 +138,24 @@ module contains the Grails application, and the <code>client</code> module conta
 <div class="paragraph">
 <p>Although the profile creates a multi-project build, it is possible to combine both <code>client</code> and <code>server</code> projects into a single build. Read the Guide <a href="http://guides.grails.org/angular2-combined/guide/index.html">Combining the Angular Profile Projects</a> to learn how.</p>
 </div>
-<div class="paragraph">
-<p>Also, you could create a Grails application using the <code>angular</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../img/start.png" alt="start">
-</div>
-</div>
-<div class="paragraph">
-<p>Grails Application Forge is a great way to discover the different provided features in the profile.</p>
+
+
+<h1 id="tests">3 Tests</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/tests.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
 </div>
 
 
-<h1 id="profilename">2 Profile Name</h1>
+<div class="paragraph">
+<p>Run the front-end unit tests and grails unit tests simultaneously with <code>./gradlew test</code>
+Run the front-end e2e and grails integration tests simultaneously with <code>./gradlew integrationTest</code></p>
+</div>
+
+
+<h1 id="profilename">4 Profile Name</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/profilename.adoc"'>
@@ -144,7 +178,7 @@ This profile was orginally named <code>angular2</code>. In order to be consisten
 </div>
 
 
-<h1 id="guides">3 Guides, Quickcast and Blog Posts</h1>
+<h1 id="guides">5 Guides, Quickcast and Blog Posts</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/guides.adoc"'>
@@ -175,7 +209,7 @@ This profile was orginally named <code>angular2</code>. In order to be consisten
 </div>
 
 
-<h1 id="profileinfo">4 Profile Info</h1>
+<h1 id="profileinfo">6 Profile Info</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/profileinfo.adoc"'>

@@ -2,7 +2,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>4 Profile Name 1.1.1.BUILD-SNAPSHOT</title>
+    <title>2 Usage 1.1.1.BUILD-SNAPSHOT</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
     <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
@@ -65,18 +65,18 @@ function addJsClass() {
             <div id="main" class="corner-all">
 
                 
-                    <div class="toc-item prev-left"><a href="../guide/tests.html">&lt;&lt; <strong>3</strong><span>Tests</span></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
                 
 
                 <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
                 
-                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>5</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/tests.html"><strong>3</strong><span>Tests</span> >></a></div>
                 
 
 
                 <div class="project">
-                    <h1>4 Profile Name</h1>
+                    <h1>2 Usage</h1>
 
                     <p><strong>Version:</strong> 1.1.1.BUILD-SNAPSHOT</p>
                 </div>
@@ -85,34 +85,42 @@ function addJsClass() {
 
                 
 
-<h1 id="profilename">4 Profile Name</h1>
+<h1 id="usage">2 Usage</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/profilename.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angular/edit/docs/src/main/docs/guide/usage.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-This profile was orginally named <code>angular2</code>. In order to be consistent with the Angular team’s guidelines on naming conventions it was renamed to <code>angular</code> Read about the <a href="http://grailsblog.objectcomputing.com/posts/2017/04/12/angular-profiles.html">angular profiles name changes</a>.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>The previous command creates a Gradle multi-project build where the <code>server</code>
+module contains the Grails application, and the <code>client</code> module contains the Angular 2 application.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To start the Grails application separately, execute <code>./gradlew server:bootRun</code></p>
+</li>
+<li>
+<p>To start the client side application separately, execute <code>./gradlew client:bootRun</code></p>
+</li>
+<li>
+<p>To start both the client and server applications simultaneously, execute <code>./gradlew bootRun --parallel</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Although the profile creates a multi-project build, it is possible to combine both <code>client</code> and <code>server</code> projects into a single build. Read the Guide <a href="http://guides.grails.org/angular2-combined/guide/index.html">Combining the Angular Profile Projects</a> to learn how.</p>
 </div>
 
 
                 <div style="clear:both;margin-top:15px;"></div>
                 
-                    <div class="toc-item prev-left"><a href="../guide/tests.html">&lt;&lt; <strong>3</strong><span>Tests</span></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
                 
-                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>5</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/tests.html"><strong>3</strong><span>Tests</span> >></a></div>
                 
                 <div style="clear:both"></div>
             </div>
