@@ -3,8 +3,8 @@ plugins {
 }
 
 node {
-    version = '7.5.0'
-    yarnVersion = '0.21.3'
+    version = '8.5.0'
+    yarnVersion = '1.0.2'
     download = true
 }
 

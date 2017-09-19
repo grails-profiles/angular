@@ -30,5 +30,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:rest-api:3.2.1"
+    runtime "org.grails.profiles:rest-api:3.3.1"
 }
