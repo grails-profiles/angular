@@ -1,12 +1,15 @@
-Grails Profiles encapsulate project commands, templates, and plugins. To create an application using the `angular` profile you can use
-the next command:
+Grails Profiles encapsulate project commands, templates, and plugins. To create an application using the `angular` profile you can use the next command:
 
-`grails create-app myapp --profile=angular`
+[source, bash]
+----
+grails create-app myapp --profile=angular
+----
 
+You can also choose this project when generating your project from the http://start.grails.org[Grails Application Forge], either from the web app or via the API:
 
-
-Also, you could create a Grails application using the `angular` profile with the http://start.grails.org[Grails Application Forge]
-
-image::start.png[]
+[source, bash]
+----
+curl -O start.grails.org/myapp.zip -d profile=angular
+----
 
 Grails Application Forge is a great way to discover the different provided features in the profile.
