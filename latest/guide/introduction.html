@@ -96,18 +96,19 @@ function addJsClass() {
 
 
 <div class="paragraph">
-<p>Grails Profiles encapsulate project commands, templates, and plugins. To create an application using the <code>angular</code> profile you can use
-the next command:</p>
+<p>Grails Profiles encapsulate project commands, templates, and plugins. To create an application using the <code>angular</code> profile you can use the next command:</p>
 </div>
-<div class="paragraph">
-<p><code>grails create-app myapp --profile=angular</code></p>
-</div>
-<div class="paragraph">
-<p>Also, you could create a Grails application using the <code>angular</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
-</div>
-<div class="imageblock">
+<div class="listingblock">
 <div class="content">
-<img src="../img/start.png" alt="start">
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myapp --profile=angular</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also choose this project when generating your project from the <a href="http://start.grails.org">Grails Application Forge</a>, either from the web app or via the API:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">curl -O start.grails.org/myapp.zip -d profile=angular</code></pre>
 </div>
 </div>
 <div class="paragraph">
