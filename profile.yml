@@ -1,4 +1,4 @@
-description: A profile for creating Grails applications with Angular 2
+description: A profile for creating Grails applications with Angular 5+
 instructions: |
 
     This profile has created a multi-project build where the "server" module contains the Grails application and the "client" module contains the Angular 2 application.
@@ -25,3 +25,8 @@ features:
         - hibernate5
     required:
         - json-views
+dependencies:
+    build:
+        - "org.grails.plugins:angular-scaffolding:2.0.0"
+    compile:
+        - "org.grails.plugins:angular-scaffolding:2.0.0"
