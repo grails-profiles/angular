@@ -1,15 +1,15 @@
-<nav class="navbar navbar-toggleable-sm navbar-full navbar-inverse" style="background-color: #424649;">
-  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navExpanded = !navExpanded" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #424649;">
+  <button class="navbar-toggler" type="button" (click)="navExpanded = !navExpanded" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="/#">
-      <img src="../../images/grails.svg" />
-  </a>
-  <div class="collapse navbar-collapse " id="exCollapsingNavbar2" [ngbCollapse]="!navExpanded">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item" ngbDropdown>
-        <a href="#" class="dropdown-toggle nav-link" ngbDropdownToggle role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-        <div class="dropdown-menu">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="!navExpanded">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="statusDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Application Status
+        </a>
+        <div class="dropdown-menu" aria-labelledby="statusDropdown" ngbDropdownMenu>
           <a class="dropdown-item" href="#">Environment: {{applicationData?.environment}}</a>
           <a class="dropdown-item" href="#">App profile: {{applicationData?.appprofile}}</a>
           <a class="dropdown-item" href="#">App version: {{applicationData?.appversion}}</a>
@@ -21,20 +21,27 @@
           <a class="dropdown-item" href="#">Reloading active: {{applicationData?.reloadingagentenabled}}</a>
         </div>
       </li>
-      <li class="nav-item" ngbDropdown>
-        <a href="#" class="dropdown-toggle nav-link" ngbDropdownToggle role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-        <div class="dropdown-menu">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="artefactsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Artefacts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="artefactsDropdown" ngbDropdownMenu>
           <a class="dropdown-item" href="#">Controllers: {{applicationData?.artefacts?.controllers}}</a>
           <a class="dropdown-item" href="#">Domains: {{applicationData?.artefacts?.domains}}</a>
           <a class="dropdown-item" href="#">Services: {{applicationData?.artefacts?.services}}</a>
         </div>
       </li>
-      <li class="nav-item" ngbDropdown>
-        <a href="#" class="dropdown-toggle nav-link" ngbDropdownToggle role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-        <div class="dropdown-menu dropdown-menu-right">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="pluginsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Installed Plugins
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pluginsDropdown" ngbDropdownMenu>
           <a class="dropdown-item" href="#" *ngFor="let plugin of applicationData?.plugins">{{plugin.name}} - {{plugin.version}}</a>
         </div>
       </li>
     </ul>
+    <a class="navbar-brand" href="/#">
+      <img src="../../images/grails.svg" />
+    </a>
   </div>
 </nav>
