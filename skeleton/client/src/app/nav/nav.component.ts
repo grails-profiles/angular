@@ -10,6 +10,7 @@ import {OnInit} from '@angular/core';
 export class NavComponent implements OnInit {
 
   applicationData: any;
+  navExpanded: boolean;
 
   constructor(private navService: NavService) { }
 
