@@ -3,6 +3,8 @@
 /* ANGULAR SCAFFOLDING STYLES */
 
 /* You can add global styles to this file, and also import other style files */
+/* NAVIGATION MENU */
+
 .nav {
     zoom: 1;
 }
@@ -29,6 +31,12 @@
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
     border-radius: 0.3em;
+}
+
+.nav li.dropdown-item a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .nav a:active, .nav a:visited {
@@ -69,6 +77,41 @@
 .nav li.dropdown.open ul.dropdown-menu {
     background-color: #424649;
 }
+
+/* customizing bootstrap nav bar */
+.navbar-dark, .navbar-static-top {
+    background-color: #424649;
+    border: 0px;
+}
+a.navbar-brand {
+    color: white !important;
+    font-size: 19px !important;
+}
+.navbar-dark .navbar-nav>.active>a, .navbar-dark .navbar-nav>.active>a:hover, .navbar-dark .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    color: white;
+}
+.navbar-nav>li.active>a {
+    color: white !important;
+}
+.navbar-nav>li>a:hover {
+    background-color: #2559a7 !important;
+    color: white !important;
+}
+.navbar-nav>li>a {
+    color: #c0d3db;
+}
+.navbar-dark .navbar-toggler .icon-bar {
+    background-color: white;
+}
+.navbar-dark .navbar-toggle:hover, .navbar-dark .navbar-toggle:focus {
+    background-color: #2559a7;
+}
+.nav .dropdown a.dropdown-toggle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 
 fieldset,
 .property-list {
@@ -449,4 +492,32 @@ th:hover, tr:hover {
 a.skip {
     position: absolute;
     left: -9999px;
+}
+
+.footer img {
+    height: 80px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    clear: bottom;
+}
+
+.footer strong a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer {
+    background: #424649;
+    color: #ffffff;
+    clear: both;
+    font-size: 1em;
+    margin-top: 1.5em;
+    padding: 1em;
+    padding-bottom: 2em;
+    min-height: 1em;
+}
+
+.footer a {
+    color: #feb672;
 }
