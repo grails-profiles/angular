@@ -2,18 +2,18 @@
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { NavService } from './nav.service';
-import { MockBackend, MockConnection } from '@angular/http/testing';
-import { XHRBackend, HttpModule, RequestMethod, Response, ResponseOptions } from '@angular/http';
+import {HttpClientModule} from "@angular/common/http";
+import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 
 
 describe('Service: Nav', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        HttpModule
+        HttpClientModule,
+        HttpClientTestingModule
       ],
       providers: [
-        {provide: XHRBackend, useClass: MockBackend},
         NavService
       ]
     });
@@ -21,29 +21,17 @@ describe('Service: Nav', () => {
 
   describe('getNavData()', () => {
 
-    it('should get application data and cache it', async(inject([NavService, XHRBackend], (service: NavService, backend: MockBackend) => {
-      let count = 0;
-      backend.connections.subscribe((connection: MockConnection) => {
-        expect(connection.request.method).toBe(RequestMethod.Get);
-        expect(connection.request.url).toBe('http://localhost:8080/application');
-        connection.mockRespond(new Response(new ResponseOptions({body: '{"expects": "JSON"}', status: 200})));
-        count++;
-      });
+    it('should get application data and cache it', async(inject([NavService, HttpTestingController], (service: NavService, backend: HttpTestingController) => {
 
       service.getNavData().subscribe((data: any) => {
         expect(data.expects).toEqual('JSON');
       });
-      service.getNavData().subscribe((data: any) => {
-        expect(data.expects).toEqual('JSON');
-      });
 
-      expect(backend.connectionsArray.length).toBe(1);
-      backend.verifyNoPendingRequests();
+      backend.expectOne({url: 'http://localhost:8080/application', method: 'GET'}).flush({expects: "JSON"});
+
+      backend.verify()
     })));
 
   });
-
-
-
 
 });
