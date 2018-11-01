@@ -1,10 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #424649;">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
+  <a class="navbar-brand" href="/#">
+    <img src="../../images/grails.svg" alt="Grails Logo" />
+  </a>
   <button class="navbar-toggler" type="button" (click)="navExpanded = !navExpanded" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="!navExpanded">
-    <ul class="navbar-nav mr-auto">
+    <ul class="nav navbar-nav ml-auto">
       <li class="nav-item dropdown" ngbDropdown>
         <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="statusDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Application Status
@@ -40,8 +43,5 @@
         </div>
       </li>
     </ul>
-    <a class="navbar-brand" href="/#">
-      <img src="../../images/grails.svg" />
-    </a>
   </div>
 </nav>
