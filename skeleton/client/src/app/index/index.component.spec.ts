@@ -57,7 +57,7 @@ describe('Component: Index', () => {
 
   it('should determine if a route exists based on path', () => {
     expect(component.hasRoute('index')).toBe(true);
-    expect(component.hasRoute('foo')).toBe(false);
+    expect(component.hasRoute('@grails.app.name@')).toBe(false);
   });
 
 });
