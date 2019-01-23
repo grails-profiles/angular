@@ -29,5 +29,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:rest-api:3.3.2"
+    runtime "org.grails.profiles:rest-api:4.0.0.BUILD-SNAPSHOT"
 }
