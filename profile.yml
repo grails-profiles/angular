@@ -25,8 +25,3 @@ features:
         - hibernate5
     required:
         - json-views
-dependencies:
-    build:
-        - "org.grails.plugins:angular-scaffolding:2.0.0"
-    compile:
-        - "org.grails.plugins:angular-scaffolding:2.0.0"
