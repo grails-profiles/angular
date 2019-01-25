@@ -256,6 +256,12 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ng-bootstrap/ng-bootstrap@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.0.1.tgz#75a6b881b24d869624caa5b5f8a4070650ad5bc4"
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.2.2.tgz#361d877f01feae800a58901b066b46539e1fe0e3"
@@ -953,6 +959,10 @@ bonjour@^3.5.0:
     dns-txt "^2.0.2"
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
+
+bootstrap@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.2.1.tgz#8f8bdca024dbf0e8644da32e918c8a03a90a5757"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
