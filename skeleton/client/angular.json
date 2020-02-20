@@ -52,6 +52,9 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "es5": {
+              "tsConfig": "src/tsconfig-es5.app.json"
             }
           }
         },
@@ -63,6 +66,9 @@
           "configurations": {
             "production": {
               "browserTarget": "@grails.app.name@:build:production"
+            },
+            "es5": {
+              "browserTarget": "@grails.app.name@:build:es5"
             }
           }
         },
