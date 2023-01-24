@@ -1,0 +1,27 @@
+description: A profile for creating Grails applications with Angular 5+
+instructions: |
+    This profile has created a multi-project build where the "server" module contains the Grails application and the "client" module contains the Angular 6 application.
+
+    To start the Grails application:              `./gradlew server:bootRun`
+    To start the client application:              `./gradlew client:bootRun`
+    To start both client and Grails applications: `./gradlew bootRun --parallel`
+
+    Run the frontend unit tests and Grails unit tests: `./gradlew test`
+    Run the frontend e2e and grails integration tests: `./gradlew integrationTest`
+
+    Node.js/npm is not required when using the Gradle tasks above, but is supported if installed.
+    E.g., from the `client` directory, start the client application: `npm start`
+skeleton:
+    excludes:
+        - gradlew
+        - gradlew.bat
+        - gradle/
+        - gradle.properties
+        - settings.gradle
+    parent:
+        target: server
+features:
+    defaults:
+        - hibernate5
+    required:
+        - json-views
