@@ -28,7 +28,7 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: Run Assemble
-        if: success() && github.event_name == 'push' && matrix.java == '8'
+        if: success() && matrix.java == '8'
         run: ./gradlew assemble
       - name: Publish to repo.grails.org
         if: success() && github.event_name == 'push' && matrix.java == '8'
