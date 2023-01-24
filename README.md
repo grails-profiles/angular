@@ -1,6 +1,6 @@
 # Grails Angular Profile
 
-[![Build Status](https://travis-ci.org/grails-profiles/angular.svg?branch=master)](https://travis-ci.org/grails-profiles/angular)
+[![Java CI](https://github.com/grails-profiles/angular/actions/workflows/gradle.yml/badge.svg)](https://github.com/grails-profiles/angular/actions/workflows/gradle.yml)
 
 
 [Documentation](https://grails-profiles.github.io/angular/latest/guide/index.html)
