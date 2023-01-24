@@ -20,7 +20,7 @@ grailsPublish {
     license = 'Apache-2.0'
     title = "Angular Profile"
     desc = "A profile for creating applications with Angular"
-    developers = [jameskleeh:"James Kleeh",willbuck:"Will Buck"]
+    developers = [jameskleeh:"James Kleeh",willbuck:"Will Buck",puneetbehl:"Puneet Behl"]
 }
 
 repositories {
