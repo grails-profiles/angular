@@ -4,7 +4,7 @@ on:
     types: [closed,reopened]
   push:
     branches:
-      - '[8-9].[0-9].x'
+      - '[1-9]+.[0-9]+.x'
   workflow_dispatch:
 jobs:
   release_notes:
@@ -19,8 +19,8 @@ jobs:
       # If it has release drafter:
       - uses: release-drafter/release-drafter@v5.15.0
         if: steps.check_release_drafter.outputs.has_release_drafter == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           prerelease: false
       # Otherwise:
@@ -30,8 +30,8 @@ jobs:
       - uses: micronaut-projects/github-actions/release-notes@grails
         if: steps.check_release_drafter.outputs.has_release_drafter == 'false'
         id: release_notes
-        with:
-          token: ${{ secrets.GH_TOKEN }}
+        # with:
+        #   token: ${{ secrets.GH_TOKEN }}
       - uses: ncipollo/release-action@v1
         if: steps.check_release_drafter.outputs.has_release_drafter == 'false' && steps.release_notes.outputs.generated_changelog == 'true'
         with:
@@ -41,4 +41,4 @@ jobs:
           name: ${{ env.title }} ${{ steps.release_notes.outputs.next_version }}
           tag: v${{ steps.release_notes.outputs.next_version }}
           bodyFile: CHANGELOG.md
-          token: ${{ secrets.GH_TOKEN }}
+          # token: ${{ secrets.GH_TOKEN }}
