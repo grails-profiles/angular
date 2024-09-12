@@ -29,5 +29,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:rest-api:5.0.1"
+    runtime "org.grails.profiles:rest-api:7.0.0"
 }
