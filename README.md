@@ -1,3 +1,7 @@
+# Relocated to
+
+https://github.com/grails/grails-profiles
+
 # Grails Angular Profile
 
 [![Java CI](https://github.com/grails-profiles/angular/actions/workflows/gradle.yml/badge.svg)](https://github.com/grails-profiles/angular/actions/workflows/gradle.yml)
